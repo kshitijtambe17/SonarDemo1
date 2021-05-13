@@ -1,0 +1,52 @@
+Valid game details:
+http://localhost:58256/games 
+-------------------------------
+Valid game details by ID:
+http://localhost:58256/games/1
+-------------------------------
+Invalid game details by ID:
+http://localhost:58256/games/9
+-------------------------------
+Valid addition of game:
+http://localhost:58256/games
+
+JSON data:
+{
+	"id": "6",
+	"name": "Fifa 20",
+	"description": "Fifa 20 is a football simulation video game published by Electronic Arts as part of the FIFA series."
+}
+-------------------------------
+Invalid addition of game:
+http://localhost:58256/games
+
+JSON data:
+{
+    "id": "1",
+    "name": "Days Gone",
+	"description": "Days Gone is an action-adventure survival horror game set in a post-apocalyptic open world, played from a third-person perspective."
+}
+-------------------------------
+Update a valid game:
+http://localhost:58256/games/6
+
+JSON data:
+{
+	"name": "Fifa 21",
+	"description": "Fifa 21 is a football simulation video game published by Electronic Arts as part of the FIFA series."
+}
+-------------------------------
+Update an invalid game:
+http://localhost:58256/games/9
+JSON data:
+{
+	"name": "Fifa 21",
+	"description": "Fifa 21 is a football simulation video game published by Electronic Arts as part of the FIFA series."
+}
+-------------------------------
+Delete a valid game:
+http://localhost:58256/games/6
+-------------------------------
+Delete an invalid game:
+http://localhost:58256/games/9
+-------------------------------
